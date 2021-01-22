@@ -12,7 +12,9 @@
 
   <?php 
     if (isset($_POST["submitbutton"]) && isset($_POST["name"]) && isset($_POST["password"])){
-      setcookie("nameCook", $_POST["name"] . " " . $_POST["password"], time() + 600, "/", null, null, true);
+      if (!empty($_POST["name"]) && !empty($_POST["password"])){
+        setcookie("nameCook", $_POST["name"] . " " . $_POST["password"], time() + 600, "/", null, null, true);
+      }
     }
   ?>
 

@@ -7,11 +7,9 @@
   <hr>
   <p class="topicTitle">Résultats</p>
   <p>
-  <?php 
-    if (isset($_COOKIE['nameCook'])){
-        echo "mon cookie : <br>";
-        echo $_COOKIE['nameCook'];
-    }
+  <?php if (isset($_COOKIE["nameCook"])){ ?>
+          <p>Mon cookie : <?= $_COOKIE["nameCook"]?></p>
+  <?php } ?>
   ?>
   </p>
   

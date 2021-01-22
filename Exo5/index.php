@@ -9,10 +9,9 @@
   <p>
   <?php 
     if (isset($_COOKIE["nameCook"])){
-      echo "<br> Cookie déjà créé : <br>" . $_COOKIE["nameCook"];
-      setcookie("nameCook", "valeur modifiée", time() + 600, "/", null, null, true);
-    }
-  ?>
+      setcookie("nameCook", "valeur modifiée", time() + 600, "/", null, null, true);?>
+      <p>Cookie : <br> <?= $_COOKIE["nameCook"]?> </p>
+    <?php } ?>
   <br>
   </p>
   <a href="./" class="btnRefresh"> Refresh </a>

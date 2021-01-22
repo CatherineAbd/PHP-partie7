@@ -14,15 +14,9 @@ Il faudra afficher le contenu de ces variables sur la deuxième page.<br>
   </p>
   <hr>
   <p class="topicTitle">Résultats</p>
-  <p>
-  <?php
-    echo "Prénom : " . $_SESSION["firstname"];
-    echo "<br>Nom : " . $_SESSION["lastname"];
-    echo "<br>Age : " . $_SESSION["age"];
-  ?>
-  </p>
-  <p>
-  <a href="session.php">Session</a>
-  </p>
+  <p>Prénom : <?= $_SESSION["firstname"] ?></p>
+  <p>Nom : <?= $_SESSION["lastname"] ?></p>
+  <p>Age : <?= $_SESSION["age"] ?></p>
+  <p><a href="session.php">Session</a></p>
   
 <?php include "..\..\bottom_html.php"; ?>
