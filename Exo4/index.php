@@ -10,7 +10,7 @@
   <?php if (isset($_COOKIE["nameCook"])){ ?>
           <p>Mon cookie : <?= $_COOKIE["nameCook"]?></p>
   <?php } ?>
-  ?>
+  
   </p>
   
 <?php include "..\..\bottom_html.php"; ?>

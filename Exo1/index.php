@@ -12,5 +12,11 @@ le nom du serveur<br>
     <p>User Agent : <?= $_SERVER['HTTP_USER_AGENT'] ?></p>
     <p>Adresse IP : <?= $_SERVER['REMOTE_ADDR'] ?></p>
     <p>Nom du serveur : <?= $_SERVER['SERVER_NAME'] ?></p>
+
+  <?php 
+    $browser = get_browser(null, true);
+
+    print_r($browser);
+  ?>
     
 <?php include "..\..\bottom_html.php"; ?>
